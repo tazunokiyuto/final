@@ -1,6 +1,6 @@
 <?php
-    const SERVER = 'mysql218.phy.lolipop.lan';
-    const DBNAME = 'LAA1516810-aso2201157';
+    const SERVER = 'mysql220.phy.lolipop.lan';
+    const DBNAME = 'LAA1516810-final';
     const USER = 'LAA1516810';
     const PASS = 'Pass0305';
     $connect = 'mysql:host='. SERVER . ';dbname='. DBNAME . ';charset=utf8';
@@ -16,24 +16,19 @@
 	<body>
 <?php
     $pdo=new PDO($connect, USER, PASS);
-    $sql=$pdo->prepare('update Shohin set shohin_mei=?,shohin_setu=?,shohin_price=?,shohin_gazo=? where shohin_number=?');
-    $Detailsql=$pdo->prepare('update Detail set shohin_sport=?,shohin_burnd=?,shohin_kate=? where shohin_number=?');
-    $Stocksql=$pdo->prepare('update Stock set konyu_kazu=?,stock_kazu=? where shohin_number=?');
-    if($Detailsql->execute([htmlspecialchars($_POST['shohin_sport']),$_POST['shohin_burnd'],$_POST['shohin_kate'],$_GET['id']])){
-        if($Stocksql->execute([htmlspecialchars($_POST['konyu_kazu']),$_POST['stock_kazu'],$_GET['id']])){
-            if($sql->execute([htmlspecialchars($_POST['shohin_mei']),$_POST['shohin_setu'],$_POST['shohin_price'],$_POST['shohin_gazo'],$_GET['id']])){
+    $sql=$pdo->prepare('update Chara set kate_number=?,chara_mei=?,chara_sign=?,chara_cou=?,chara_wp=?,chara_rea=? where chara_number=?');
+
+            if($sql->execute([htmlspecialchars($_POST['kate_number']),$_POST['chara_mei'],$_POST['chara_sign'],$_POST['chara_cou'],$_POST['chara_wp'],$_POST['chara_rea'],$_GET['id']])){
         // var_dump($sql);
                 echo '<h1>更新に成功しました。</h1>';
             }else{
                 echo '<h1>更新に失敗しました。</h1>';
             }
-        }
-    }
     echo '<form action="ad-update.php?id=', $_GET['id'],'" method="post">';
     echo '<input type="submit" value="更新画面へ" class="ko"></div>';
     echo '</form>';
     echo "\n";
 ?>
-        <button onclick="location.href='ad-list.php'" class="i">商品一覧へ</button>
+        <button onclick="location.href='list.php'" class="i">商品一覧へ</button>
     </body>
 </html>
