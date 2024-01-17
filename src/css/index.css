@@ -1,13 +1,13 @@
 body{
-    background-image: url(../img/1.png);
+    background-image: url(../img/3.2.jpg);
 }
 h3{
     text-align: center;
-    color: white;
+    color: black;
 }
 p{
     text-align: center;
-    color: white;
+    color: black;
 }
 .re{
     width: 100px;
@@ -15,6 +15,9 @@ p{
     text-align: center;
     background-color: black;
     color: white;
+    position: absolute;
+    top: 280px; /* 下部に配置 */
+    left: 10px; /* 左側に配置 */
 }
 .r{
     width: 100px;
@@ -22,4 +25,7 @@ p{
     text-align: center;
     background-color: red;
     color: white;
+    position: absolute;
+    top: 370px; /* 下部に配置 */
+    left: 10px; /* 左側に配置 */
 }
