@@ -10,18 +10,17 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/ad(css)/ad-list.css">
+    <link rel="stylesheet" href="./css/list.css">
     <title>原神キャラクター</title>                                 
 </head>
 <body>
     <div class="list_field">
     <h1>キャラクター一覧画面</h1>
     <a href="ad-registration.php">
-        <button type="button" class="re">商品登録</button>
+        <button type="button" class="re">登録</button>
     </a>
     <table align="center" border="1">
         <tr>
-            <th>番号</th>
             <th>キャラ名</th>
             <th>星座</th>
             <th>国</th>
@@ -35,7 +34,6 @@ $sql = $pdo->query('SELECT * FROM Chara inner join Kate on Chara.kate_number = K
 foreach($sql as $row){
 
     echo '<tr>';
-    echo '<td>', $row['chara_number'], '</td>';
     echo '<td>', $row['chara_mei'], '</td>';
     echo '<td>', $row['chara_sign'], '</td>';
     echo '<td>', $row['chara_cou'], '</td>';

@@ -9,7 +9,7 @@
     <div class="field">
     <form action = "ad-Registration Completed.php" method = "post">
         <table>
-        <tr><th>神の目</th><th>キャラ名</th><th>星座</th></tr>
+        <tr><th></th><th>キャラ名</th><th>星座</th></tr>
         <tr>
         <td><select name="kate_number" required>
             <option value="1">　　　炎　　　</option>

@@ -1,0 +1,30 @@
+
+  body {
+    height: 100%;
+    background-image: url(../img/1.0.jpg);
+    margin: 0;
+  }
+  h1 {
+    text-align: center;
+    padding: 70px;
+    font-size: 50px;
+    color: white;
+  }
+  table{
+    background-color: white;
+  }
+
+
+  .list_field{
+    text-align: center;
+  }
+
+
+  
+  .re{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-color: red;
+    color: white;
+  }

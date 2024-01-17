@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../css/ad(css)/ad-update.css">
+    <link rel="stylesheet" href="./css/ad-update.css">
     <title>ASOスポーツ用品サイト(管理者側)</title>
 </head>
 <body>
@@ -27,17 +27,17 @@
                     echo '<input type="hidden" name="chara_number" value="', $row['chara_number'], '" required>';
 
                     echo '<table>';
-                    echo '<tr><th>ID</th><th>キャラ名</th><th>星座</th></tr>';
+                    echo '<tr><th>神の目</th><th>キャラ名</th><th>星座</th></tr>';
                     echo '<tr>';
                     echo '<td>';
                     echo '<select name="kate_number" required>';
-                    echo '<option value="1" ', ($row['kate_number'] == 1 ? 'selected' : ''), '>1炎</option>';
-                    echo '<option value="2" ', ($row['kate_number'] == 2 ? 'selected' : ''), '>2氷</option>';
-                    echo '<option value="3" ', ($row['kate_number'] == 3 ? 'selected' : ''), '>3雷</option>';
-                    echo '<option value="4" ', ($row['kate_number'] == 4 ? 'selected' : ''), '>4草</option>';
-                    echo '<option value="5" ', ($row['kate_number'] == 5 ? 'selected' : ''), '>5風</option>';
-                    echo '<option value="6" ', ($row['kate_number'] == 6 ? 'selected' : ''), '>6水</option>';
-                    echo '<option value="7" ', ($row['kate_number'] == 7 ? 'selected' : ''), '>7岩</option>';
+                    echo '<option value="1" ', ($row['kate_number'] == 1 ? 'selected' : ''), '>　　　炎　　　</option>';
+                    echo '<option value="2" ', ($row['kate_number'] == 2 ? 'selected' : ''), '>　　　氷　　　</option>';
+                    echo '<option value="3" ', ($row['kate_number'] == 3 ? 'selected' : ''), '>　　　雷　　　</option>';
+                    echo '<option value="4" ', ($row['kate_number'] == 4 ? 'selected' : ''), '>　　　草　　　</option>';
+                    echo '<option value="5" ', ($row['kate_number'] == 5 ? 'selected' : ''), '>　　　風　　　</option>';
+                    echo '<option value="6" ', ($row['kate_number'] == 6 ? 'selected' : ''), '>　　　水　　　</option>';
+                    echo '<option value="7" ', ($row['kate_number'] == 7 ? 'selected' : ''), '>　　　岩　　　</option>';
                     echo '</select>';
                     echo '</td>';
                     echo '<td><input type="text" name="chara_mei" value="', $row['chara_mei'], '" required></td>';

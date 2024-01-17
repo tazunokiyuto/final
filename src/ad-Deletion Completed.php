@@ -9,8 +9,8 @@
 <html lang="ja">
 	<head>
 		<meta charset="UTF-8">
-        <link rel="stylesheet" href="../css/ad(css)/ad-Deletion Completed.css">
-		<title>ASOスポーツ用品サイト(管理者側)</title>
+        <link rel="stylesheet" href="./css/ad-Deletion Completed.css">
+		<title>原神キャラクターシステム</title>
 	</head>
 	<body>
 <?php
@@ -22,5 +22,5 @@
 
     echo '<h1>削除が完了しました。</h1>'; 
 ?>
-<button onclick="location.href='list.php'" class="de">商品一覧へ</button>
+<button onclick="location.href='list.php'" class="de">一覧へ</button>
 </html>

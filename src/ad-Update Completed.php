@@ -10,7 +10,7 @@
 <html lang="ja">
 	<head>
 		<meta charset="UTF-8">
-        <link rel="stylesheet" href="../css/ad(css)/ad-Update Completed.css">
+        <link rel="stylesheet" href="./css/ad-Update Completed.css">
 		<title>ASOスポーツ用品サイト(管理者側)</title>
 	</head>
 	<body>
@@ -29,6 +29,6 @@
     echo '</form>';
     echo "\n";
 ?>
-        <button onclick="location.href='list.php'" class="i">商品一覧へ</button>
+        <button onclick="location.href='list.php'" class="i">一覧へ</button>
     </body>
 </html>

@@ -14,7 +14,7 @@ ini_set('display_errors', 1);
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/ad(css)/ad-Registration Completed.css">
+    <link rel="stylesheet" href="./css/ad-Registration Completed.css">
     <title>ASOスポーツ用品サイト(管理者側)</title>
 </head>
 <body>
@@ -44,10 +44,10 @@ ini_set('display_errors', 1);
         }
     ?>
     <form action="ad-registration.php" method="post">
-        <input type="submit" value="商品登録へ" class="to">
+        <input type="submit" value="登録へ" class="to">
     </form>
     <form action="list.php" method="post">
-        <input type="submit" value="商品一覧へ" class="i">
+        <input type="submit" value="一覧へ" class="i">
     </form>
 </body>
 </html>
